@@ -11,6 +11,9 @@
 		"format": "prettier --write src/**/*.ts",
 		"prepare": "husky && husky install"
 	},
+	"engines": {
+		"node": ">=10.6.0"
+	},
 	"license": "ISC",
 	"author": "kamovichilya@gmail.com",
 	"keywords": [
@@ -21,6 +24,8 @@
 	],
 	"dependencies": {
 		"@types/express": "^4.17.21",
+		"class-transformer": "^0.5.1",
+		"class-validator": "^0.14.1",
 		"compression": "^1.7.4",
 		"config": "^3.3.12",
 		"cors": "^2.8.5",

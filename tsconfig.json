@@ -32,7 +32,8 @@
 			"@controllers/*": ["controllers/*"],
 			"@services/*": ["services/*"],
 			"@models/*": ["models/*"],
-			"@routes/*": ["routes/*"]
+			"@routes/*": ["routes/*"],
+			"@dtos/*": ["dtos/*"]
 		}
 	},
 	"include": ["src", "src/**/*.ts", "src/**/*.json", ".env"],

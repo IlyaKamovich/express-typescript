@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import { ProductController } from '@controllers/product.controller';
 import { IRoute } from '@interfaces/router.interface';
+import { validationMiddleware } from '@middlewares/validation.middleware';
+import { CreateProductDto } from '@dtos/create-product.dto';
 
 class ProductRoute implements IRoute {
 	readonly path = '/product';
@@ -13,6 +15,7 @@ class ProductRoute implements IRoute {
 
 	private initializeRoutes() {
 		this.router.get(`${this.path}`, this.productController.findAll);
+		this.router.post(`${this.path}`, validationMiddleware(CreateProductDto), this.productController.create);
 	}
 }
 
