@@ -1,0 +1,62 @@
+{
+	"env": {
+		"browser": false,
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:import/typescript",
+		"plugin:node/recommended",
+		"plugin:promise/recommended",
+		"plugin:prettier/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint", "prettier"],
+	"rules": {
+		"no-process-exit": "off",
+		"node/no-missing-import": "off",
+		"import/no-unresolved": "off",
+		"prefer-template": "error",
+		"no-var": "error",
+		"no-useless-concat": "error",
+		"prettier/prettier": [
+			"error",
+			{},
+			{
+				"usePrettierrc": true
+			}
+		],
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"ts": "never",
+				"js": "never"
+			}
+		],
+		"no-console": "off",
+		"node/no-unsupported-features/es-syntax": [
+			"error",
+			{
+				"ignores": ["modules"]
+			}
+		],
+		"@typescript-eslint/no-unused-vars": "error"
+	},
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".ts"]
+			}
+		}
+	},
+	"ignorePatterns": ["commitlint.config.js", "build", "node_modules"]
+}

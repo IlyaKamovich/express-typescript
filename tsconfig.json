@@ -1,0 +1,40 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["ESNext"],
+		"module": "CommonJS",
+		"strict": true,
+		"typeRoots": ["node_modules/@types"],
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"pretty": true,
+		"moduleResolution": "node",
+		"declaration": true,
+		"sourceMap": true,
+		"strictPropertyInitialization": false,
+		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"resolveJsonModule": true,
+		"importHelpers": true,
+		"allowJs": true,
+		"noEmit": false,
+		"baseUrl": "./src",
+		"outDir": "build",
+		"rootDir": "src",
+		"paths": {
+			"@/*": ["src/*"],
+			"@exceptions/*": ["exceptions/*"],
+			"@interfaces/*": ["interfaces/*"],
+			"@middlewares/*": ["middlewares/*"],
+			"@database/*": ["database/*"],
+			"@controllers/*": ["controllers/*"],
+			"@services/*": ["services/*"],
+			"@models/*": ["models/*"],
+			"@routes/*": ["routes/*"]
+		}
+	},
+	"include": ["src", "src/**/*.ts", "src/**/*.json", ".env"],
+	"exclude": ["node_modules"]
+}

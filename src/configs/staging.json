@@ -1,0 +1,23 @@
+{
+	"app": {
+		"port": 5000,
+		"database": "",
+		"urlencoded": {
+			"extended": true,
+			"parameterLimit": 50
+		},
+		"cors": {
+			"origin": "*",
+			"credentials": false
+		},
+		"rateLimit": {
+			"windowMs": 1000,
+			"limit": 10,
+			"standardHeaders": true,
+			"legacyHeaders": false,
+			"message": {
+				"message": "Too many requests, please try again later."
+			}
+		}
+	}
+}
