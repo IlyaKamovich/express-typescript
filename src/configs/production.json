@@ -16,7 +16,7 @@
 			"standardHeaders": true,
 			"legacyHeaders": false,
 			"message": {
-				"message": "Too many requests, please try again later."
+				"error": "Too many requests, please try again later."
 			}
 		}
 	}

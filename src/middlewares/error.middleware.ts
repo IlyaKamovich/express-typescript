@@ -5,7 +5,7 @@ function errorMiddleware(error: HttpException, req: Request, res: Response, next
 	try {
 		const message = error?.message || error?.message || 'Something went wrong';
 		console.error(`${[req.method]} ${req.path} >> Status Code:: ${error.status}, Error Message:: ${message}`);
-		res.status(error.status).json({ message });
+		res.status(error.status).json({ error: message });
 	} catch (error) {
 		next(error);
 	}

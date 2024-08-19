@@ -24,6 +24,6 @@ export interface IConfigRateLimit {
 	standardHeaders?: boolean | DraftHeadersVersion | undefined;
 	legacyHeaders?: boolean | undefined;
 	message: {
-		message: string;
+		error: string;
 	};
 }
