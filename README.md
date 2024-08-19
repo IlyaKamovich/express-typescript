@@ -4,13 +4,13 @@
 
 ## Description
 
-This is a basic example of using Express, TypeScript and MongoD [Express Typescript MongoDB](https://github.com/IlyaKamovich/express-typescript).
+This is a advanced example of using Express, TypeScript and MongoDB [Express Typescript MongoDB](https://github.com/IlyaKamovich/express-typescript).
 
 The [master](https://github.com/IlyaKamovich/express-typescript) branch represents the version with **MongoDB**.
 
 ## Installation
 
-1.  `npm instal`
+1.  `npm install`
 2.  Add MongoDB URI to your config (development, production, and staging)
 
 ## Running
